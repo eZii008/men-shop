@@ -1,20 +1,30 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  margin: 0;
-  padding: 10px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-header {
-  text-align: center;
-  padding: 10px;
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-#products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-price {
+  color: green;
 }
